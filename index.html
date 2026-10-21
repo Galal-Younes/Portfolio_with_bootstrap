@@ -22,7 +22,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-md-center gap-md-2">
+       <ul class="navbar-nav ms-auto align-items-md-center gap-md-2" data-bs-toggle="collapse" data-bs-target="#mainNav">
           <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
@@ -37,39 +37,40 @@
   </nav>
   <!-- end navbar -->
 
-  <!-- start hero -->
-  <section class="hero py-5" id="Home">
-    <div class="container py-md-5">
-      <div class="row align-items-center g-5">
+ <!-- start hero -->
+  <section class="hero py-4 py-md-5" id="Home">
+    <div class="container py-3 py-md-5">
+      <div class="row align-items-center g-4 g-md-5">
         <!-- on mobile the photo comes first (order-first), on desktop it is on the right -->
         <div class="col-md-5 order-first order-md-last text-center">
           <img src="imgs/IMG_20250708_203558_298.webp" alt="Galal's photo" class="hero-photo img-fluid shadow">
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7 text-center text-md-start">
           <span class="greetings fw-bold">Hi, I'm Galal.</span>
-          <h1 class="display-3 fw-bold my-3">I build clear, useful software.</h1>
+          <h1 class="display-4 display-md-3 fw-bold my-3">I build clear, useful software.</h1>
           <p class="text-muted fs-5 mb-4">
             Computer Science student and aspiring software developer. I like turning ideas into small, working
             products and teaching others how to code.
           </p>
-          <a href="#Projects" class="btn btn-primary btn-lg rounded-pill px-4 me-2">View Projects</a>
-          <a href="#Contact" class="btn btn-outline-primary btn-lg rounded-pill px-4">Contact Me</a>
+          <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-start gap-2">
+            <a href="#Projects" class="btn btn-primary btn-lg rounded-pill px-4 fs-6">View Projects</a>
+            <a href="#Contact" class="btn btn-outline-primary btn-lg rounded-pill px-4 fs-6">Contact Me</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- end hero -->
-
-  <!-- start about -->
-  <section class="about py-5" id="About">
-    <div class="container py-md-5">
-      <div class="row align-items-start g-5">
-        <div class="col-md-4">
+<!-- start about -->
+  <section class="about py-4 py-md-5" id="About">
+    <div class="container py-3 py-md-5">
+      <div class="row align-items-center align-items-md-start g-4 g-md-5">
+        <div class="col-md-4 text-center text-md-start">
           <img src="imgs/Full-Stack Developer Night Workspace.png" alt="Galal at his desk"
-            class="about-img img-fluid">
+            class="about-img img-fluid mx-auto">
         </div>
         <div class="col-md-8">
-          <h2 class="fw-bold mb-3">About Me</h2>
+          <h2 class="fw-bold mb-3 text-center text-md-start">About Me</h2>
           <p class="text-muted fs-5">
             I study Computer Science at Sadat City University in Egypt. I am working toward a career in software
             development, and I learn best by building real things.
@@ -80,18 +81,20 @@
           </p>
 
           <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item bg-transparent d-flex gap-4">
-              <strong class="detail-label">Location</strong> Egypt
+            <li class="list-group-item bg-transparent d-flex gap-3 px-0">
+              <strong class="detail-label">Location</strong> <span>Egypt</span>
             </li>
-            <li class="list-group-item bg-transparent d-flex gap-4">
-              <strong class="detail-label">Focus</strong> Web Development
+            <li class="list-group-item bg-transparent d-flex gap-3 px-0">
+              <strong class="detail-label">Focus</strong> <span>Web Development</span>
             </li>
-            <li class="list-group-item bg-transparent d-flex gap-4">
-              <strong class="detail-label">Languages</strong> Arabic &amp; English
+            <li class="list-group-item bg-transparent d-flex gap-3 px-0">
+              <strong class="detail-label">Languages</strong> <span>Arabic &amp; English</span>
             </li>
           </ul>
 
-          <a href="files/Galal_Younes(1).pdf" download="Galal_Younes(1).pdf" class="btn btn-primary rounded-pill px-4">Download My CV</a>
+          <div class="text-center text-md-start">
+            <a href="files/Galal_Younes(1).pdf" download="Galal_Younes(1).pdf" class="btn btn-primary rounded-pill px-4">Download My CV</a>
+          </div>
         </div>
       </div>
     </div>
@@ -159,16 +162,16 @@
       <h2 class="fw-bold mb-4">Projects</h2>
       <div class="row g-4">
 
-        <div class="col-md-6 col-lg-3">
-          <div class="card h-100 overflow-hidden">
+     <div class="col-md-6 col-lg-3">
+          <div class="card h-100 d-flex flex-column overflow-hidden">
             <img src="imgs/Screenshot From 2026-10-15 22-30-29.png" class="card-img-top" alt="Practical Project screenshot">
-            <div class="card-body">
+            <div class="card-body flex-grow-1">
               <h3 class="h5">Practical Project</h3>
               <p class="text-muted">A personal landing page built to practice responsive layouts.</p>
               <span class="badge skill-tag">HTML</span>
               <span class="badge skill-tag">CSS</span>
             </div>
-            <div class="card-footer bg-white border-0 pb-3">
+            <div class="card-footer bg-white border-0 pb-3 mt-auto">
               <a href="https://galal-younes.github.io/practical_project" class="me-3">Live Demo</a>
               <a href="https://github.com/Galal-Younes/practical_project">GitHub Repo</a>
             </div>
@@ -176,15 +179,15 @@
         </div>
 
         <div class="col-md-6 col-lg-3">
-          <div class="card h-100 overflow-hidden">
+          <div class="card h-100 d-flex flex-column overflow-hidden">
             <img src="imgs/Screenshot From 2026-10-16 00-10-04.png" class="card-img-top" alt="WebCraft Project screenshot">
-            <div class="card-body">
+            <div class="card-body flex-grow-1">
               <h3 class="h5">WebCraft Project</h3>
               <p class="text-muted">An Arabic (RTL) landing page for a web design service.</p>
               <span class="badge skill-tag">HTML</span>
               <span class="badge skill-tag">CSS</span>
             </div>
-            <div class="card-footer bg-white border-0 pb-3">
+            <div class="card-footer bg-white border-0 pb-3 mt-auto">
               <a href="https://galal-younes.github.io/web-craft" class="me-3">Live Demo</a>
               <a href="https://github.com/Galal-Younes/web-craft">GitHub Repo</a>
             </div>
@@ -192,15 +195,15 @@
         </div>
 
         <div class="col-md-6 col-lg-3">
-          <div class="card h-100 overflow-hidden">
+          <div class="card h-100 d-flex flex-column overflow-hidden">
             <img src="imgs/Screenshot From 2026-10-16 00-41-05.png" class="card-img-top" alt="Kasper Project screenshot">
-            <div class="card-body">
+            <div class="card-body flex-grow-1">
               <h3 class="h5">Kasper Project</h3>
               <p class="text-muted">A multi-section template with a hero slider.</p>
               <span class="badge skill-tag">HTML</span>
               <span class="badge skill-tag">CSS</span>
             </div>
-            <div class="card-footer bg-white border-0 pb-3">
+            <div class="card-footer bg-white border-0 pb-3 mt-auto">
               <a href="https://galal-younes.github.io/kasper" class="me-3">Live Demo</a>
               <a href="https://github.com/Galal-Younes/kasper">GitHub Repo</a>
             </div>
@@ -208,23 +211,20 @@
         </div>
 
         <div class="col-md-6 col-lg-3">
-          <div class="card h-100 overflow-hidden">
+          <div class="card h-100 d-flex flex-column overflow-hidden">
             <img src="imgs//Screenshot From 2026-10-16 00-37-59.png" class="card-img-top" alt="Leon Project screenshot">
-            <div class="card-body">
+            <div class="card-body flex-grow-1">
               <h3 class="h5">Leon Project</h3>
               <p class="text-muted">A minimal agency template with a full-screen hero image.</p>
               <span class="badge skill-tag">HTML</span>
               <span class="badge skill-tag">CSS</span>
             </div>
-            <div class="card-footer bg-white border-0 pb-3">
+            <div class="card-footer bg-white border-0 pb-3 mt-auto">
               <a href="https://galal-younes.github.io/Leon" class="me-3">Live Demo</a>
               <a href="https://github.com/Galal-Younes/Leon">GitHub Repo</a>
             </div>
           </div>
         </div>
-
-      </div>
-    </div>
   </section>
   <!-- end projects -->
 
@@ -256,7 +256,7 @@
       <div class="narrow mx-auto">
         <h2 class="fw-bold mb-3">Contact</h2>
         <p class="text-muted fs-5">Have a project or an opportunity in mind? Send me a message.</p>
-        <form action="">
+        <form  action="https://formspree.io/f/maeqgpqq" method="post">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control form-control-lg" id="name" name="Name">
@@ -291,6 +291,7 @@
   <!-- end footer -->
 
   <!-- bootstrap js (needed for the mobile menu button) -->
+   <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
